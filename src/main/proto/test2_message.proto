@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package example.bubble;
+import "test_common.proto";
+option java_multiple_files = true;
+
+message Test2Message {
+  TestCommonMessage test_common_message = 1;
+  string string2 = 2;
+  repeated int32 list2 = 3;
+}

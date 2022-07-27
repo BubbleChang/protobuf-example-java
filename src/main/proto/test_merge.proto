@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package example.bubble;
+import "test1_message.proto";
+import "test2_message.proto";
+
+message TestMergeMessage {
+  repeated Test1Message Test1Message = 1;
+  repeated Test2Message Test2Message = 2;
+}
